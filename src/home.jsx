@@ -12,6 +12,9 @@ import saveSolid from "../src/assets/icons/save-solid.svg";
 import sorvete from "../src/assets/icons/sorvete.svg";
 import clock from "../src/assets/icons/clock-regular.svg";
 import star from "../src/assets/icons/star-solid.svg";
+import sine from "../src/assets/icons/sino.svg";
+import user from "../src/assets/icons/user.svg";
+
 
 function Wellcome() {
   let [name, setN] = useState("Teresa");
@@ -22,6 +25,16 @@ function Wellcome() {
       <p id="text">
         Faça você a sua comida, fique em <span>casa</span>
       </p>
+    </div>
+  );
+}
+
+
+function Toolbar() {
+  return (
+    <div id="toolbar">
+      <img src={user} />
+      <img src={sine} />
     </div>
   );
 }
@@ -181,6 +194,7 @@ function Home() {
   return (
     <>
       <div id="container">
+       <Toolbar />
         <Wellcome />
         <div id="search-carrossel">
           <Search />

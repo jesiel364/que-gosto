@@ -2,20 +2,11 @@ import "./App.css";
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import pizza from "../src/assets/icons/pizza.svg";
-import sine from "../src/assets/icons/sino.svg";
-import user from "../src/assets/icons/user.svg";
+
 import saveReg from "../src/assets/icons/bookmark-regular.svg";
 import plus from "../src/assets/icons/plus.svg";
 import house from "../src/assets/icons/house.svg";
 
-function Toolbar() {
-  return (
-    <div id="toolbar">
-      <img src={user} />
-      <img src={sine} />
-    </div>
-  );
-}
 
 
 function Navigation(props){
@@ -62,7 +53,7 @@ function App() {
   return (
     <>
       <div id="container">
-      
+     
        <Outlet />
        <Navigation active='home' />
       </div>
