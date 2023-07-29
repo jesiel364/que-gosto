@@ -1,6 +1,8 @@
-# React + Vite
+# Que Gosto App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App de receitas culinárias
+
+<img src="quegosto.jpg" height="400" />
 
 Currently, two official plugins are available:
 
