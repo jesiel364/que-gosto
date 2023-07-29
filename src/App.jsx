@@ -62,7 +62,7 @@ function App() {
   return (
     <>
       <div id="container">
-        <Toolbar />
+      
        <Outlet />
        <Navigation active='home' />
       </div>

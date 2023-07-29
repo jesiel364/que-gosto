@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
-import Save from './Save'
-import Home from './Home'
+import Save from './save.jsx'
+import Home from './home.jsx'
 import ErrorPage from './errorPage.jsx'
 import Recipe from './Recipe.jsx'
 

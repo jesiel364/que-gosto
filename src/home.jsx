@@ -14,7 +14,7 @@ import clock from "../src/assets/icons/clock-regular.svg";
 import star from "../src/assets/icons/star-solid.svg";
 
 function Wellcome() {
-  let [name, setN] = useState("Ana");
+  let [name, setN] = useState("Teresa");
 
   return (
     <div id="well">

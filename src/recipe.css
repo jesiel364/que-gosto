@@ -1,0 +1,113 @@
+#recipe{
+  /*background-color: red;*/
+  
+}
+
+img{
+  height: 26px;
+}
+
+#recipe #img{
+  height: 300px;
+  width: 100vw;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 10px 12px 35px 10px ;
+}
+
+#recipe #body{
+  padding: 20px; 
+}
+
+#body #title{
+  font-weight: 700;
+  font-size : 26px;
+  color: #282828 ;
+  margin-bottom: 0;
+}
+
+#body #info{
+  /*background-color: red ;*/
+  display: flex;
+}
+
+#body #time{
+  font-size: 12px;
+  width: 70px;
+  display: flex ;
+}
+
+#body #time img{
+  height: 14px;
+ display: flex ;
+}
+
+#body #time p{
+  line-height: .7;
+  margin-right : 8px;
+  display: flex ;
+  margin-right: 6px;
+}
+
+#body #desc{
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+#content #title{
+  font-weight: 600;
+  font-size: 18px ;
+  color: #282828 ;
+  border-style: none;
+  background-color: none;
+}
+
+#ingre p{
+  border-style: solid;
+  /*background-color: #c4c4c4;*/
+  border-left-color: #fdcb19; 
+  border-left-width: 4px;
+  padding-left: 14px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-radius: 3px;
+}
+
+#preparo #title{
+  margin-top: 40px;
+  border-style: none;
+}
+
+#preparo .passo{
+  border-style: solid;
+  padding: 10px;
+  border-top-style: none;
+  border-right-style: none;
+  /*border-left-style: none;*/
+  border-bottom-style: none;
+  display: flex;
+}
+
+.step{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  margin-right: 16px;
+}
+
+#pills{
+  display: flex ;
+  overflow-x: scroll;
+  margin-bottom: 200px;
+}
+
+#pills p{
+  padding: 7px;
+  background-color: #EFEBE9 ;
+  margin-right: 20px;
+  font-weight : 600;
+  border-radius: 34px;
+  font-size: 14px;
+}
