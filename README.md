@@ -3,6 +3,7 @@
 App de receitas culinárias
 
 <img src="quegosto.jpg" height="400" />
+<img src="quegosto-desk.png" height="400" />
 
 Currently, two official plugins are available:
 
