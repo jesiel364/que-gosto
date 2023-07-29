@@ -26,10 +26,12 @@ function Toolbar() {
 }
 
 function Wellcome() {
+let [name, setN] = useState("Ana")
+
   return (
     <div id="well">
-      <p>Hello. Teresa!</p>
-      <p>Make your own food, stay at home</p>
+      <p id="name">Olá. {name}!</p>
+      <p id="text">Faça você a sua comida,<br></br> fique em casa</p>
     </div>
   );
 }
@@ -37,10 +39,14 @@ function Wellcome() {
 function Search() {
   return (
     <div id="search">
-      <input />
+    <div>
+      <input focused />
+      </div>
+      <div>
       <img src={magnify} id="magnify" />
-      <label>Search any recipe</label>
+      <label>Buscar receitas</label>
       <img src={controls} id="controls" />
+      </div>
     </div>
   );
 }
@@ -54,17 +60,27 @@ function Carrossel() {
     },
     {
       id: 2,
-      title: "Western",
+      title: "Lanches",
       icon: pizza,
     },
     {
       id: 3,
-      title: "Drinks",
+      title: "Bebidas",
       icon: hot,
     },
     {
       id: 4,
-      title: "Desserve",
+      title: "Food",
+      icon: pizza,
+    },
+     {
+      id: 5,
+      title: "Food",
+      icon: hot,
+    },
+     {
+      id: 6,
+      title: "Food",
       icon: sorvete,
     },
   ];
@@ -83,16 +99,22 @@ function Carrossel() {
 
 function Card(props){
  return (
-  <div id="card">
+  <div id="card" >
 
-    <img src={props.img} />
+    <div style={{ backgroundImage: `url(${props.img})` }} id="img" ></div>
     <div id="time">
       <img src={clock} />
+      <p>16 mins</p>
     </div>
 
     <div id="rate">
       <img src={star} />
       <p>4.8</p>
+    </div>
+    
+    <div id="text">
+    <p id="title">{props.title}</p>
+    <p id="desc">{props.desc}</p>
     </div>
   </div>
  )
@@ -101,11 +123,12 @@ function Card(props){
 function Popular(){
   return(
     <div id="popular">
-      <p>Popular Recipes</p>
-
-      <Card img='https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg' />
-      <Card img='https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg' />
-      <Card img='https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg' />
+      <p>Receitas Populares</p>
+    <div id="items">
+      <Card desc="Brasil" title="Feijoada" img='https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg' />
+      <Card desc="America do Norte" title="Chille" img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMkpqCtmQPln2G0PJSZgE7KeiJBP0PDmtvFw&usqp=CAU' />
+      <Card desc="Itália" title="Macarronada" img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMF0B4-GMN-skUPJYhg2Hl56tdre_kbl6v8P0bjArg2fl_3DqockJL51RL&s=10' />
+    </div>
     </div>
   )
 }
